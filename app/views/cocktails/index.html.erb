@@ -1,0 +1,9 @@
+<% @cocktails.each do |cocktail| %>
+<div class="col-sm-4">
+  <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://picsum.photos/g/200/300');">
+    <div class="card-description">
+       <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+    </div>
+  </div>
+</div>
+<% end %>
